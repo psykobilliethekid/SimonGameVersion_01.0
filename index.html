@@ -1,77 +1,78 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Simon Says Tutorial by Dan Purdy</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="script.js"></script>
-	<!-- Based on the tutorial by Dan Purdy: https://www.danpurdy.co.uk/tutorial/simon-says-game-in-jquery-tutorial/ -->
-	</head>
+<head>
+    <title>Simon Says Tutorial by Dan Purdy</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Based on the tutorial by Dan Purdy: https://www.danpurdy.co.uk/tutorial/simon-says-game-in-jquery-tutorial/ -->
+</head>
 
-	<body>
-		<div class="wrapper">
-			<div class="back">
-      			<div class="pad shape1">
-        			<audio preload="auto" class="sound1" data-pad="1">
-          				<source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg"/>
-          				<source src="sounds/ogg/sounds_01.ogg" type="audio/ogg"/>
-        			</audio>
-      			</div>
+<body>
+<div class="wrapper">
+    <div class="back">
+        <div class="pad shape1">
+            <audio preload="auto" class="sound1" data-pad="1">
+                <source src="sounds/mp3/sounds_01.mp3" type="audio/mpeg"/>
+                <source src="sounds/ogg/sounds_01.ogg" type="audio/ogg"/>
+            </audio>
+        </div>
 
-				<div class="pad shape2">
-			        <audio preload="auto" class="sound2" data-pad="2">
-			         	<source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg"/>
-			         	<source src="sounds/ogg/sounds_02.ogg" type="audio/ogg"/>
-			        </audio>
-			    </div>
+        <div class="pad shape2">
+            <audio preload="auto" class="sound2" data-pad="2">
+                <source src="sounds/mp3/sounds_02.mp3" type="audio/mpeg"/>
+                <source src="sounds/ogg/sounds_02.ogg" type="audio/ogg"/>
+            </audio>
+        </div>
 
-			    <div class="pad shape3">
-        			<audio preload="auto" class="sound3" data-pad="3">
-          				<source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg"/>
-          				<source src="sounds/ogg/sounds_03.ogg" type="audio/ogg"/>
-        			</audio>
-      			</div>
+        <div class="pad shape3">
+            <audio preload="auto" class="sound3" data-pad="3">
+                <source src="sounds/mp3/sounds_03.mp3" type="audio/mpeg"/>
+                <source src="sounds/ogg/sounds_03.ogg" type="audio/ogg"/>
+            </audio>
+        </div>
 
-      			<div class="pad shape4">
-        			<audio preload="auto" class="sound4" data-pad="4">
-          				<source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg"/>
-          				<source src="sounds/ogg/sounds_04.ogg" type="audio/ogg"/>
-        			</audio>
-				</div>      
-			</div>
+        <div class="pad shape4">
+            <audio preload="auto" class="sound4" data-pad="4">
+                <source src="sounds/mp3/sounds_04.mp3" type="audio/mpeg"/>
+                <source src="sounds/ogg/sounds_04.ogg" type="audio/ogg"/>
+            </audio>
+        </div>
+    </div>
 
-		<div class="circle"></div>
+    <div class="circle"></div>
 
-		<div class="level">
-      		<h2>Level: 1</h2>
-   		</div>
+    <div class="level">
+        <h2>Level: 1</h2>
+    </div>
 
-   		<div class="score">
-      		<h2>Score: 0</h2>
-    	</div>
+    <div class="score">
+        <h2>Score: 0</h2>
+    </div>
 
-    	<ul class="difficulty">
+    <ul class="difficulty">
 
-	      <li>
-	        <input type="radio" class="difOpt" name="difficulty" value="2">Easy
-	      </li>
+        <li>
+            <input type="radio" class="difOpt" name="difficulty" value="2">Easy
+        </li>
 
-	      <li>
-	        <input type="radio" class="difOpt" name="difficulty" value="1" checked>Normal
-	      </li>
+        <li>
+            <input type="radio" class="difOpt" name="difficulty" value="1" checked>Normal
+        </li>
 
-	      <li>
-	        <input type="radio" class="difOpt" name="difficulty" value="0.5">Hard
-	      </li>
+        <li>
+            <input type="radio" class="difOpt" name="difficulty" value="0.5">Hard
+        </li>
 
-	      <li>
-	        <input type="radio" class="difOpt" name="difficulty" value="0.25">Insane
-	      </li>
-    	</ul>
+        <li>
+            <input type="radio" class="difOpt" name="difficulty" value="0.25">Insane
+        </li>
+    </ul>
 
-    	<div class="sButton">
-      		<button class="start">Start Game</button>
-    	</div>
-
-	</body>
+    <div class="sButton">
+        <button class="start">Start Game</button>
+    </div>
+    <script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="soundPlayer.js"></script>
+    <script src="script.js"></script>
+</div>
+</body>
 </html>

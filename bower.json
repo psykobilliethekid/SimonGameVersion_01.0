@@ -1,0 +1,29 @@
+{
+  "name": "SimonGameVersion_01.0",
+  "version": "0.0.0",
+  "homepage": "https://github.com/psykobilliethekid/SimonGameVersion_01.0",
+  "authors": [
+    "Dani Moss"
+  ],
+  "description": "Simon says.. ?",
+  "keywords": [
+    "game",
+    "simon",
+    "says",
+    "old",
+    "school"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.3"
+  }
+}
